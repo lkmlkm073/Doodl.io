@@ -1,0 +1,179 @@
+html {
+	min-height: 100vh;
+}
+
+body {
+	background-color: #3B4252;
+	min-width: 600px;
+}
+
+.navbar {
+	top: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 9999;
+}
+
+.main-section {
+	margin: 0 auto;
+	margin-top: 50%;
+	padding: 0;
+}
+
+.modal-content {
+	background-color: #d8dee9;
+	opacity: 80%;
+	border-radius: 10px;
+	padding: 4em;
+}
+
+/* Game Page */
+
+.game-container {
+	background-color: #d8dee9;
+	margin: 100px auto 2em;
+	border-radius: 10px;
+	padding: 1em;
+	min-width: 610px;
+}
+
+.game-interface-table {
+	margin: 0 1em;
+}
+
+#interface-table {
+	width: 100%;
+}
+
+.player-list {
+	list-style: none;
+	max-height: 774px;
+	width: 250px;
+	display: block;
+	overflow-y: auto;
+}
+
+.player-list li {
+	background-color: aliceblue;
+	border: solid 1px#5E81AC;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 0.5em 0em;
+	padding-left: 0.5em;
+	border-radius: 10px;
+}
+
+.game-canvas {
+	background-color: #d8dee9;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+canvas {
+	padding: 0;
+	margin: 1em auto;
+	display: block;
+	border: 1px solid black;
+}
+
+.features-div {
+	width: 575px;
+	display: flex;
+}
+
+#brush-indicator {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.brush-colors-div {
+	font-size: 0;
+	display: inline-block;
+}
+
+.brush-colors {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+.brush-eraser-fill-imgs {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.brush-sizes-div {
+	display: inline-block;
+}
+
+.brush-sizes-imgs {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.progress {
+	margin: 0 1em;
+}
+
+#clear-canvas {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.chat-container {
+	background: aliceblue;
+	position: relative;
+	height: 100%;
+	border-radius: 5px;
+	max-width: 250px;
+}
+
+.chat-messages {
+	height: calc(100% - 38px);
+	max-height: 712px;
+	min-width: 250px;
+	display: block;
+	overflow-wrap: break-word;
+	word-break: break-word;
+	padding: 1em;
+}
+
+.chat-container #chat-form {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.player-list-col {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.player-list-col {
+		display: none;
+	}
+	.chat-container {
+		max-width: 575px;
+		position: relative;
+		margin: 0 auto;
+	}
+	.chat-messages {
+		height: calc(100% - 38px);
+		max-height: 200px;
+		min-width: 250px;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+}

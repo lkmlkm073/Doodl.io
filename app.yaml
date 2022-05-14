@@ -1,0 +1,12 @@
+runtime: nodejs12
+env: standard
+instance_class: F1
+automatic_scaling:
+  max_instances: 1
+env_variables:
+  SQL_USER: user
+  SQL_PASSWORD: doodlio123
+  SQL_DATABASE: doodlioDatabase
+  INSTANCE_CONNECTION_NAME: cmpt470project-294201:us-west1:doodliodata
+beta_settings:
+  cloud_sql_instances: cmpt470project-294201:us-west1:doodliodata
